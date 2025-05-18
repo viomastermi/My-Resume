@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <title>My Resume</title>
     <style>
-        div {
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .center-header {
+            text-align: center;
+        }
+
+        .justified-text {
             text-align: justify;
             text-justify: inter-word;
         }
@@ -13,9 +21,13 @@
 </head>
 
 <body>
-    <h1>Mu'izzuddin Ismail</h1>
-    <img src="./images/mastermi.jpg" alt="This is Master MI" width="100" height="100">
-    <div>
+    <div class="center-header">
+        <h1>Mu'izzuddin Ismail</h1>
+        <img src="./images/mastermi.jpg" alt="This is Master MI" width="300" height="300">
+    </div>
+
+    <div class="justified-text">
+        <!-- Semua kandungan resume Master diteruskan di sini seperti asal -->
         <h3>Summary & Objective</h3>
         <div>Visionary educator, entrepreneur, and tech innovator with a multidisciplinary background as a teacher,
             chef, speaker, therapist, and company director. Founder & CEO of VIONAVI and myakademik.com, driving digital
@@ -224,6 +236,6 @@
         </ul>
     </div>
 </body>
-<footer>© Mu'izzuddin Ismail. All rights reserved.</footer>
+<footer style="text-align: center;">© Mu'izzuddin Ismail. All rights reserved.</footer>
 
 </html>
