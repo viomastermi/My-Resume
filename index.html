@@ -4,33 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
         }
 
-        .center-header {
-            text-align: center;
+        function printPage() {
+            window.print();
         }
-
-        .justified-text {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-    </style>
+    </script>
 </head>
 
 <body>
     <div class="center-header">
         <h1>Mu'izzuddin Ismail</h1>
-        <img src="./images/mastermi.jpg" alt="This is Master MI" width="300" height="300">
+        <img src="./images/mastermi.jpg" alt="This is Master MI">
+        <div class="buttons">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <button onclick="printPage()">Print PDF</button>
+        </div>
     </div>
 
     <div class="justified-text">
-        <!-- Semua kandungan resume Master diteruskan di sini seperti asal -->
         <h3>Summary & Objective</h3>
-        <div>Visionary educator, entrepreneur, and tech innovator with a multidisciplinary background as a teacher,
-            chef, speaker, therapist, and company director. Founder & CEO of VIONAVI and myakademik.com, driving digital
+        <div>Visionary educator, entrepreneur and tech innovator with a multidisciplinary background as a teacher, chef,
+            speaker, therapist, and company director. Founder & CEO of VIONAVI and myakademik.com, driving digital
             transformation in education, robotics, health, and e-commerce across Southeast Asia. Proven track record in
             launching scalable platforms, leading creative teams, and building impactful community-driven initiatives.
         </div>
@@ -38,76 +37,67 @@
         <div>To expand the reach of my ventures by collaborating with forward-thinking partners, investors, and
             institutions aiming to revolutionize the learning experience, digital infrastructure, and family wellness
             ecosystem in the region through tech-based solutions, AI, and social impact projects.</div>
+        <br />
         <hr />
         <h3>Education</h3>
         <div>
             <ul>
-                <h4>
-                    <li>The Beginning of Knowledge : Quran Memorization & Islamic EducationIn 2012 | Mu'izzuddin Ismail
-                        embarked
-                        on a
-                        sacred path of knowledge by enrolling in an intensive Quran memorization program (Tahfiz).
-                        Within
-                        just two years, he successfully completed the memorization of all 30 Juz of the Holy Quran, from
-                        Surah al-Fatihah to Surah an-Naas, a milestone completed with full dedication and spiritual
-                        commitment by July 2004.</li>
-                    <li>Early Academic ExcellenceIn 2006 | he sat for the Selangor Religious Secondary Certificate (SMA)
-                        examination, where he achieved outstanding results, ranking among the top-performing students in
-                        Islamic education at the secondary level.</li>
-                    <li>Studies in Yemen: Islamic Medicine & Cupping Therapy | Between 2008 and 2011, Mu'izzuddin Ismail
-                        pursued
-                        further education in Yemen, where he deepened his knowledge of traditional Islamic healing,
-                        including cupping therapy (bekam) and ruqyah syariah. During his time there, he gained extensive
-                        hands-on experience in treating patients through both spiritual and physical healing methods.
-                    </li>
-                    <li>Spiritual Exploration & the Path of Tasawwuf | Between 2013 and 2015, Mu'izzuddin Ismail devoted
-                        himself
-                        to
-                        the study of Tasawwuf (Islamic spirituality) and metaphysical theology through the Tariqat
-                        al-Ghazaliyyah (Malaysia) and Tariqat An-Naqsyabandiyyah. His journey then continued to Egypt,
-                        where
-                        he studied under world-renowned Hadith scholars, Sheikh Muhammad Sa'id Mamduh and Sheikh Ahmad
-                        Muhammad An-Nahrity, delving into Hadith sciences, Quranic studies, and Islamic healing. While
-                        in
-                        Egypt, he also embraced a third spiritual order, the Tariqat As-Syazuliyyah, deepening his
-                        practice
-                        of inner purification and spiritual discipline.</li>
-                    <li>Study of Metaphysical Healing & Islamic Energy Sciences | Throughout 2016–2017, he further
-                        explored
-                        a range of metaphysical healing arts, including Quranic ruqyah, spiritual energy work, aura
-                        sciences, and Islamic-based internal force techniques (jurus) all based on authentic sources and
-                        traditional wisdom.</li>
-                    <li>Transition to Technology & Software Engineering | Since 2019, Mu'izzuddin Ismail has immersed
-                        himself in
-                        the
-                        world of technology and software development, studying computer science, software engineering,
-                        and
-                        gaining proficiency as a Full-Stack Developer. He has since ventured into web and mobile app
-                        development, focusing on AI-driven platforms, automation systems, and digital product
-                        ecosystems.
-                    </li>
+                <li>The Beginning of Knowledge : Quran Memorization & Islamic Education In 2002 | Mu'izzuddin Ismail
+                    embarked
+                    on a
+                    sacred path of knowledge by enrolling in an intensive Quran memorization program (Tahfiz).
+                    Within
+                    just two years, he successfully completed the memorization of all 30 Juz of the Holy Quran, from
+                    Surah al-Fatihah to Surah an-Naas, a milestone completed with full dedication and spiritual
+                    commitment by July 2004.</li>
+                <li>Early Academic ExcellenceIn 2006 | he sat for the Selangor Religious Secondary Certificate (SMA)
+                    examination, where he achieved outstanding results, ranking among the top-performing students in
+                    Islamic education at the secondary level.</li>
+                <li>Studies in Yemen: Islamic Medicine & Cupping Therapy | Between 2008 and 2011, Mu'izzuddin Ismail
+                    pursued
+                    further education in Yemen, where he deepened his knowledge of traditional Islamic healing,
+                    including cupping therapy (bekam) and ruqyah syariah. During his time there, he gained extensive
+                    hands-on experience in treating patients through both spiritual and physical healing methods.
+                </li>
+                <li>Spiritual Exploration & the Path of Tasawwuf | Between 2013 and 2015, Mu'izzuddin Ismail devoted
+                    himself
+                    to
+                    the study of Tasawwuf (Islamic spirituality) and metaphysical theology through the Tariqat
+                    al-Ghazaliyyah (Malaysia) and Tariqat An-Naqsyabandiyyah. His journey then continued to Egypt,
+                    where
+                    he studied under world-renowned Hadith scholars, Sheikh Muhammad Sa'id Mamduh and Sheikh Ahmad
+                    Muhammad An-Nahrity, delving into Hadith sciences, Quranic studies, and Islamic healing. While
+                    in
+                    Egypt, he also embraced a third spiritual order, the Tariqat As-Syazuliyyah, deepening his
+                    practice
+                    of inner purification and spiritual discipline.</li>
+                <li>Study of Metaphysical Healing & Islamic Energy Sciences | Throughout 2016–2017, he further
+                    explored
+                    a range of metaphysical healing arts, including Quranic ruqyah, spiritual energy work, aura
+                    sciences, and Islamic-based internal force techniques (jurus) all based on authentic sources and
+                    traditional wisdom.</li>
+                <li>Transition to Technology & Software Engineering | Since 2019, Mu'izzuddin Ismail has immersed
+                    himself in
+                    the
+                    world of technology and software development, studying computer science, software engineering,
+                    and
+                    gaining proficiency as a Full-Stack Developer. He has since ventured into web and mobile app
+                    development, focusing on AI-driven platforms, automation systems, and digital product
+                    ecosystems.
+                </li>
             </ul>
-            </h4>
         </div>
         <hr />
         <h3>Work experience</h3>
         <ul>
-            <li>
-                <h4>Service in Mosques & Community Engagement | From 2012 to 2014, he served as an imam, muezzin, and
-                    religious educator in several mosques and suraus across Selangor, particularly at Padang Jawa
-                    Mosque,
-                    Shah Alam, guiding the community through prayers, religious lectures, and spiritual consultations.
-                </h4>
-            </li>
-            <li>
-                <h4>Founding of Darul Muqarrabin: Centre for Islamic Learning & Healing | In 2016, he established Darul
-                    Muqarrabin, a center for Islamic studies and traditional healing based in Padang Jawa, Shah Alam.
-                    The
-                    center became a beacon for spiritual knowledge, healing from unseen disturbances such as black
-                    magic,
-                    inherited spirits, and metaphysical illnesses. Darul Muqarrabin has collaborated with various
-                    institutions, including:</h4>
-            </li>
+            <li>Service in Mosques & Community Engagement | From 2012 to 2014, he served as an imam, muezzin and
+                religious educator in several mosques and suraus across Selangor, particularly at Padang Jawa Mosque,
+                Shah Alam, guiding the community through prayers, religious lectures, and spiritual consultations.</li>
+            <li>Founding of Darul Muqarrabin: Centre for Islamic Learning & Healing | In 2016, he established Darul
+                Muqarrabin, a center for Islamic studies and traditional healing based in Padang Jawa, Shah Alam. The
+                center became a beacon for spiritual knowledge, healing from unseen disturbances such as black magic,
+                inherited spirits, and metaphysical illnesses. Darul Muqarrabin has collaborated with various
+                institutions, including:</li>
             <ul>
                 <li>Immigration Department of Selangor</li>
                 <li>Malaysian Army, Port Dickson Division</li>
@@ -116,12 +106,9 @@
                 <li>Multiple mosques and suraus throughout Selangor</li>
                 …and numerous other government and private bodies.
             </ul>
-            <li>
-                <h4>Development of Sunnah-Based Natural Health Products | Beginning in 2018, Mu'izzuddin Ismail
-                    pioneered the
-                    creation of various natural and organic health products, rooted in Islamic healing traditions. These
-                    include:</h4>
-            </li>
+            <li>Development of Sunnah-Based Natural Health Products | Beginning in 2018, Mu'izzuddin Ismail pioneered
+                the creation of various natural and organic health products, rooted in Islamic healing traditions. These
+                include:</li>
             <ul>
                 <li>Air Terapi Syifa’ (Spiritual Healing Water)</li>
                 <li>Lemonade Therapy Balm</li>
@@ -131,31 +118,20 @@
                 <li>Koka and Oud Solib Prayer Beads (Tasbih)</li>
                 …and many more wellness products formulated with therapeutic and spiritual benefits.
             </ul>
-            <li>
-                <h4>Founding of VIONAVI SDN BHD: A Multi-Sector Technology Company | In the same year, he founded MI
-                    Trading
-                    & Consultancy Sdn Bhd, which later evolved into VIONAVI SDN BHD – a diversified technology company
-                    specializing in digital learning, fintech solutions, artificial intelligence, e-commerce
-                    infrastructure,
-                    and smart safety devices.</h4>
-            </li>
-            <li>
-                <h4>Establishment of Lasté Café: Culinary Experience & Community Hub | In 2021, Mu'izzuddin Ismail
-                    launched Lasté
-                    Café in Shah Alam – a culinary space that blends Western and local cuisines, envisioned as a
-                    platform
-                    for casual da’wah, economic empowerment, and social engagement within the community.</h4>
-            </li>
-            <li>
-                <h4>Launch of MyAkademik.com & Belibelah.com: Digital Education & E-commerce Platforms | From 2024
-                    onward,
-                    Mu'izzuddin Ismail introduced:</h4>
-            </li>
+            <li>Founding of VIONAVI SDN BHD: A Multi-Sector Technology Company | In the same year, he founded MI Trading
+                & Consultancy Sdn Bhd, which later evolved into VIONAVI SDN BHD – a diversified technology company
+                specializing in digital learning, fintech solutions, artificial intelligence, e-commerce infrastructure,
+                and smart safety devices.</li>
+            <li>Establishment of Lasté Café: Culinary Experience & Community Hub | In 2021, Mu'izzuddin Ismail launched
+                Lasté Café in Shah Alam – a culinary space that blends Western and local cuisines, envisioned as a
+                platform for casual da’wah, economic empowerment, and social engagement within the community.</li>
+            <li>Launch of MyAkademik.com & Belibelah.com: Digital Education & E-commerce Platforms | From 2024 onward,
+                Mu'izzuddin Ismail introduced:</li>
             <ul>
-                <li><a href="https://myakademik.com">myakademik.com</a> – a comprehensive digital learning platform in
+                <li><a href="https://myakademik.com">myakademik.com</a> | a comprehensive digital learning platform in
                     Bahasa Melayu, offering diverse courses and programs to empower learners and educators across
                     Southeast Asia.</li>
-                <li><a href="https://belibelah.com">belibelah.com</a> – a rising e-commerce marketplace set to penetrate
+                <li><a href="https://belibelah.com">belibelah.com</a> | a rising e-commerce marketplace set to penetrate
                     markets in Malaysia, Indonesia, Brunei, and Singapore, built on a SaaS infrastructure with
                     commission-based vendor integration.</li>
             </ul>
@@ -163,26 +139,21 @@
         <hr />
         <h3>Skills</h3>
         <ul>
-            <li>
-                <h4>Spiritual & Religious Expertise</h4>
-                <ul>
-                    <li>30 Juzuk Quran Memorization (Certified Hafiz)</li>
-                    <li>Islamic Theology (Aqidah, Fiqh, Hadith & Tafsir)</li>
-                    <li>Sufi Studies (Tasawwuf, Suluk, Tareeqah)</li>
-                    <li>Multi-Tariqah Practitioner: al-Ghazaliyyah, Naqsyabandiyyah, Syazuliyyah</li>
-                    <li>Spiritual Counselling & Guidance</li>
-                    <li>Ruqyah Syariah Healing & Protection</li>
-                    <li>Leading Imam & Bilal Roles in Jumu’ah & Community Prayers</li>
-                </ul>
-            </li>
-            <li>
-                <h4>Traditional & Alternative Healing Expertise</h4>
-            </li>
+            <li>Spiritual & Religious Expertise</li>
             <ul>
-                <li>
-                    <h4>Highly experienced in traditional Islamic and holistic healing modalities, with deep
-                        specialization in:</h4>
-                </li>
+                <li>30 Juzuk Quran Memorization (Certified Hafiz)</li>
+                <li>Islamic Theology (Aqidah, Fiqh, Hadith & Tafsir)</li>
+                <li>Sufi Studies (Tasawwuf, Suluk, Tareeqah)</li>
+                <li>Multi-Tariqah Practitioner: al-Ghazaliyyah, Naqsyabandiyyah, Syazuliyyah</li>
+                <li>Spiritual Counselling & Guidance</li>
+                <li>Ruqyah Syariah Healing & Protection</li>
+                <li>Leading Imam & Bilal Roles in Jumu’ah & Community Prayers</li>
+            </ul>
+            </li>
+            <li>Traditional & Alternative Healing Expertise</li>
+            <ul>
+                <li>Highly experienced in traditional Islamic and holistic healing modalities, with deep specialization
+                    in:</li>
                 <ul>
                     <li>Manual Therapeutic Massage (Urutan Terapi)</li>
                     <li>Chiropractic Techniques (Kiropraktik Asas)</li>
@@ -190,33 +161,44 @@
                     <li>Islamic Spiritual Healing (Ruqyah Syariah)</li>
                     <li>Acupuncture-Based Stimulation (point-pressure healing aligned with energy pathways)</li>
                 </ul>
-                <li>
-                    <h4>Skilled in diagnosing and treating physical, emotional, and metaphysical ailments such as:</h4>
-                </li>
+                <li>Skilled in diagnosing and treating physical, emotional, and metaphysical ailments such as:</li>
                 <ul>
                     <li>Black magic (sihir), inherited spirits (saka), santau, anxiety disorders, and energy blockages.
                     </li>
                 </ul>
-                <li>
-                    <h4>Capable of formulating custom therapeutic sessions by integrating physical techniques (such as
-                        massage and adjustment) with spiritual modalities and Quranic healing, offering a complete
-                        body-mind-soul recovery experience.</h4>
-                </li>
-                <li>
-                    <h4>Developer of holistic therapy frameworks under Darul Muqarrabin, combining:</h4>
-                </li>
+                <li>Capable of formulating custom therapeutic sessions by integrating physical techniques (such as
+                    massage and adjustment) with spiritual modalities and Quranic healing, offering a complete
+                    body-mind-soul recovery experience.</li>
+                <li>Developer of holistic therapy frameworks under Darul Muqarrabin, combining:</li>
                 <ul>
                     <li>Prophetic medicine (Tibb Nabawi)</li>
                     <li>Energy & aura sciences</li>
                     <li>Mental well-being and inner purification</li>
                 </ul>
-                <li>
-                    <h4>Has treated hundreds of individuals and collaborated with institutions including:</h4>
-                </li>
+                <li>Has treated hundreds of individuals and collaborated with institutions including:</li>
                 <ul>
                     <li>Military, hospitals, NGOs, religious organizations, and private wellness clients.</li>
                 </ul>
             </ul>
+        </ul>
+        <hr />
+        <h3>My Projects</h3>
+        <ul>
+            <li><a href="https://darulmuqarrabin.com" target="_blank">Darul Muqarrabin</a></li>
+            <li><a href="https://vionavi.com" target="_blank">VIONAVI</a></li>
+            <li><a href="https://belibelah.com" target="_blank">belibelah.com</a></li>
+            <li><a href="https://myakademik.com" target="_blank">myakademik.com</a></li>
+            <li><a href="https://viotrade.vionavi.com" target="_blank">VIO Trade</a></li>
+            <li><a href="https://momdadly.com" target="_blank">MOMDADLY</a></li>
+            <li><a href="https://go.vionavi.com" target="_blank">VIONAVI Go</a></li>
+            <li><a href="https://dev.vionavi.com" target="_blank">Dev Learning</a></li>
+            <li><a href="https://viobuddy.vionavi.com" target="_blank">VIOBuddy</a></li>
+            <li><a href="https://apps.vionavi.com" target="_blank">VIONAVI's Application</a></li>
+        </ul>
+        <hr />
+        <h3>GITHUB</h3>
+        <ul>
+            <li><a href="https://github.com/viomastermi?tab=repositories">My Repositories</a></li>
         </ul>
         <hr />
         <h3>My Social Media</h3>
@@ -229,13 +211,13 @@
         </ul>
         <hr />
         <h3>Other</h3>
-        <hr />
         <ul>
             <li><a href="./hobbies/my-hobbies.html">My Hobbies</a></li>
-            <li><a href="./contacts/my-contact.html">My Contact</a></li>
+            <li><a href="./contacts/contact-me.html">My Contacts</a></li>
         </ul>
     </div>
+
+    <footer>© Mu'izzuddin Ismail. All rights reserved.</footer>
 </body>
-<footer style="text-align: center;">© Mu'izzuddin Ismail. All rights reserved.</footer>
 
 </html>

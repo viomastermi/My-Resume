@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: justify;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.hobby-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.hobby-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    color: #666;
+}
+
+.back-button,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-button:hover,
+button:hover {
+  background: #0056b3;
+}
